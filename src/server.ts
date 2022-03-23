@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mustache from 'mustache-express';
 import path from 'path';
+import mainRouter from './router'
 
 const server = express();
 
@@ -12,5 +13,6 @@ server.engine('mustache', mustache());
 server.use(express.static(path.join(__dirname, '../public')));
 
 // routes
+server.use(mainRouter);
 
 server.listen(3000);

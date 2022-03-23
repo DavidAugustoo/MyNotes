@@ -1,4 +1,4 @@
-import {Request, Response} from 'express'
+import {Request, Response} from 'express';
 
 export const allNote = (req: Request, res: Response) => {
     res.render('pages/home');
