@@ -171,6 +171,41 @@ main {
     cursor: pointer;
 }
 
+/* addnote */
+
+.addnote {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.addnote--input {
+    border: 0px;
+    max-width: 500px;
+    font-size: 1.1rem;
+}
+
+.addnote--input:focus {
+    outline: none;
+}
+
+.addnote-buttom {
+    display: flex;
+    justify-content: center;
+    max-width: 100px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.addnote-buttom:hover {
+    background-color: #318aff;
+}
+
 
 
 

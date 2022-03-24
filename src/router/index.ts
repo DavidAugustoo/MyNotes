@@ -8,7 +8,9 @@ router.get('/', homeController.allNote);
 
 router.get('/completed', homeController.completedNote);
 
-router.get('/addNote', crudController.addNote);
+router.get('/addNoteForm', crudController.addNoteForm);
+
+router.post('/addNote', crudController.addNote);
 
 router.get('/editNote', crudController.editNote);
 

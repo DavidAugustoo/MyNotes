@@ -1,9 +1,24 @@
 import {Request, Response} from 'express';
 
-export const allNote = (req: Request, res: Response) => {
-    res.render('pages/home');
+import Notes from '../models/notes';
+
+export const allNote = async (req: Request, res: Response) => {
+
+    let list = await Notes.find({
+        completed: false
+    });
+
+    res.render('pages/home', {
+        list,
+    });
 }
 
-export const completedNote = (req: Request, res: Response) => {
-    res.send('home');
+export const completedNote = async (req: Request, res: Response) => {
+    let list = await Notes.find({
+        completed: true
+    });
+
+    res.render('pages/completed', {
+        list,
+    });
 }
