@@ -12,8 +12,12 @@ router.get('/addNoteForm', crudController.addNoteForm);
 
 router.post('/addNote', crudController.addNote);
 
-router.get('/editNote', crudController.editNote);
+router.post('/editNote/:id', crudController.editNote);
 
-router.get('/delNote', crudController.delNote);
+router.get('/editNoteForm/:id', crudController.editNoteForm);
+
+router.get('/completeNote/:id', crudController.completeNote);
+
+router.get('/delNote/:id', crudController.delNote);
 
 export default router;
