@@ -1,11 +1,13 @@
 {{>partials/header}}
 
+{{#list}}
     <main>
-        <form class="addnote" action="/addNote" method="post">
-            <h2>Adicionar nota</h2>
-            <input class="addnote--input" type="text" placeholder="Ex: Fazer tarefa de matemática" name="title">
-            <button class="addnote-buttom"type="submit">Adicionar</button>
+        <form class="addnote" action="/editNote/{{id}}" method="POST">
+            <h2>Editar Nota</h2>
+            <input class="addnote--input" type="text" placeholder="{{title}}" name="title">
+            <button class="addnote-buttom" type="submit">Editar</button>
         </form>
     </main>
+{{/list}}
 
 {{>partials/footer}}
