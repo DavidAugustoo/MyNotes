@@ -1,9 +1,9 @@
 {{>partials/header}}
     
     <main>
-        <form class="search-area">
+        <form class="search-area" method="POST" action="/searchCompleted">
             <img src="images/iconSearch.png">
-            <input class="search--input" type="text" placeholder="Pesquisar notas">
+            <input class="search--input" type="text" placeholder="Pesquisar notas" name="searchCompleted">
         </form>
 
         <h1>Notas Concluídas</h1>

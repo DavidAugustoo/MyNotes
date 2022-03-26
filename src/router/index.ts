@@ -20,4 +20,8 @@ router.get('/completeNote/:id', crudController.completeNote);
 
 router.get('/delNote/:id', crudController.delNote);
 
+router.post('/search', crudController.search);
+
+router.post('/searchCompleted', crudController.searchCompleted);
+
 export default router;

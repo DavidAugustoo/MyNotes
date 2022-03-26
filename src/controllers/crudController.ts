@@ -61,3 +61,45 @@ export const delNote = async (req: Request, res: Response) => {
 
     res.redirect('/completed');
 }
+
+export const search = async (req: Request, res: Response) => {
+
+    let search: string = req.body.search;
+
+    if (!search) {
+        res.redirect('/');
+        return;
+    } 
+
+    let list = await Notes.find({  
+        $text: {$search: `"${search}"`},
+        completed: false
+    });
+
+    console.log(list);
+
+    res.render('pages/home', {
+        list
+    });
+}
+
+export const searchCompleted = async (req: Request, res: Response) => {
+
+    let search: string = req.body.searchCompleted;
+
+    if (!search) {
+        res.redirect('/');
+        return;
+    } 
+
+    let list = await Notes.find({  
+        $text: {$search: `"${search}"`},
+        completed: true
+    });
+
+    console.log(list);
+
+    res.render('pages/home', {
+        list
+    });
+}

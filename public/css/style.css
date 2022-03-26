@@ -128,6 +128,8 @@ main {
     flex-direction: column;
     gap: 50px;
     padding: 50px;
+    height: 100vh;
+    overflow: auto;
 }
 
 .search-area {
@@ -258,11 +260,15 @@ main {
         gap: 60px;
     }
 
-    .nav-mobile {
+    .nav-mobile.open {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
+    }
+
+    .nav-mobile.closed {
+        display: none;
     }
     
     .nav-desktop {
