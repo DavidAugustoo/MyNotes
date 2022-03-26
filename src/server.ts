@@ -7,6 +7,8 @@ import { mongoConnect } from './database/mongodb';
 
 mongoConnect();
 
+dotenv.config();
+
 const server = express();
 
 server.set('view engine', 'mustache');
@@ -20,4 +22,6 @@ server.use(express.urlencoded({extended: true}));
 // routes
 server.use(mainRouter);
 
-server.listen(3000);
+var port_number = server.listen(process.env.PORT || 8080);
+
+server.listen(port_number);
