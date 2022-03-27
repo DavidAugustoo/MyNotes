@@ -17,8 +17,8 @@ const schema = new Schema<NoteType>({
 
 const modelName: string = "Notes";
 
-const notesModel = connection && connection.models[modelName]
+const phrasesModel = connection && connection.models[modelName]
     ? (connection.models[modelName] as Model<NoteType>)
     : model<NoteType>(modelName, schema);
 
-export default notesModel;
+export default phrasesModel;
