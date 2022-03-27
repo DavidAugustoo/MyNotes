@@ -4,7 +4,7 @@
   <a href="#sobre-">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#layout-">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#funcionalidades-">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#instalação-">Instalação</a>
+  <a href="#instalação">Instalação</a>
 </p>
 <p align="center"> 
 MyNotes é um aplicativo para que você mantenha todas as suas notas em um só lugar. Seja algo em uma lista de afazeres ou que você precisa lembrar.
@@ -19,7 +19,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Typescript
 - Express
 - Mustache
-- MongoDb
+- MongoDB
 
 ## Sobre 📖
 
@@ -29,7 +29,7 @@ MyNotes é um aplicativo pessoal para que você mantenha todas as suas notas em 
 
 
 ### Objetivo
-Práticar principais recursos de Node, Express e Mongodb. Entre eles:
+Práticar principais recursos de Node, Express e MongoDB. Entre eles:
 
 - Conexão e manipulação do banco de dados
 - Gerenciamento de rotas
