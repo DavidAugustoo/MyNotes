@@ -29,7 +29,7 @@ MyNotes é um aplicativo pessoal para que você mantenha todas as suas notas em 
 
 
 ### Objetivo
-Práticar principais recursos de Node, Express e Mongodv. Entre eles:
+Práticar principais recursos de Node, Express e Mongodb. Entre eles:
 
 - Conexão e manipulação do banco de dados
 - Gerenciamento de rotas
@@ -50,7 +50,7 @@ No link abaixo você encontra o layout do projeto:
 
 ### Pré-requisitos
 
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
+Antes de começar, instale os seguintes requisitos globais:
 
 * npm
   ```sh
